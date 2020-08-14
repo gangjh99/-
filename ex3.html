@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style>
+    .js {
+      font-weight: bold;
+      color: green;
+    }
+
+    #first {
+      color: red;
+    }
+
+    span {
+      color: blue;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
+</head>
+
+<body id="target">
+  <h1 a href="index.html">WEB</h1>
+
+  <h2 style="background-color: coral; color:powderblue;">JavaScript</h2>
+  <input type="button" value="mimi" onclick="
+  if(document.querySelector('#target').dataset.mode=== 'mimi'){
+   document.querySelector('#target').style.color ='black';
+   document.querySelector('#target').style.backgroundColor='pink';
+   document.querySelector('#target').dataset.mode='kiki';
+   this.value = 'mimi';
+ }else{
+   document.querySelector('#target').style.color ='pink';
+   document.querySelector('#target').style.backgroundColor='black';
+    document.querySelector('#target').dataset.mode='mimi';
+    this.value = 'kiki';
+ }
+  ">
+
+<p>
+    <span id="first" class="js">JavaScript</span> (JS) is a lightweight, interpreted, or just-in-time
+    compiled programming language with first-class functions. While
+    it is most well-known as the scripting language for Web pages,
+    many non-browser environments also use it, such as Node.js,
+    Apache CouchDB and <span>Adobe</span> Acrobat. <span class="js">JavaScript</span> is a prototype-based,
+    multi-paradigm, single-threaded, dynamic language, supporting
+    object-oriented, imperative, and declarative (e.g. functional
+    programming) styles. Read more about <span class="js">JavaScript</span> .
+
+    This section is dedicated to the <span class="js">JavaScript</span> language itself,
+    and not the parts that are specific to Web pages or other host
+    environments. For information about API specifics to Web pages,
+    please see Web APIs and DOM.
+
+    The standard for <span class="js">JavaScript</span> is ECMAScript. As of 2012, all modern
+    browsers fully support ECMAScript 5.1. Older browsers support at
+    least ECMAScript 3. On June 17, 2015, <span>ECMA</span> International published
+    the sixth major version of ECMAScript, which is officially called
+    ECMAScript 2015, and was initially referred to as ECMAScript 6 or ES6.
+    Since then, ECMAScript standards are on yearly release cycles.
+    This documentation refers to the latest draft version, which is
+    currently ECMAScript 2020.
+
+    Do not confuse <span class="js">JavaScript</span> with the Java programming language. Both "Java"
+    and "<span class="js">JavaScript</span> " are trademarks or registered trademarks of Oracle
+    in the U.S. and other countries. However, the two programming languages
+    have a very different syntax, semantic, and use.
+
+  </p>
+  <h2></h2>
+</body>
+
+</html>
