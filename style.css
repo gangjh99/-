@@ -46,6 +46,7 @@ h2 {
   padding: 20px;
   background-color: #E6E0F8;
   font-size: 20px;
+  text-decoration: none;
 }
 
 @media(max-width:800px) {
