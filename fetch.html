@@ -3,14 +3,21 @@
   <head>
   <body>
     
-    <input type="button" value="fetch" onclick="
+    <input type="button" value="golf" onclick="
     fetch('golf').then(function(response){
       response.text().then(function(text){
         document.querySelector('article').innerHTML=text;
       })
     })
     ">
-    <input type="button" value="fetch" onclick="
+    <input type="button" value="css" onclick="
+    fetch('css').then(function(response){
+      response.text().then(function(text){
+        document.querySelector('article').innerHTML=text;
+      })
+    })
+    ">
+    <input type="button" value="weather" onclick="
     fetch('css').then(function(response){
       response.text().then(function(text){
         document.querySelector('article').innerHTML=text;
