@@ -10,13 +10,55 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/custom.css">
 
+    <SCRIPT type="text/javascript">
+
+  var rand_ing = 0;
+  var useRand= 0;
+  images = new Array();
+  // 보여줄 이미지를 아래와 같은 방법으로 설정
+  images[1] = new Image();
+  images[1].src="boose.jpg";
+
+  images[2] = new Image();
+  images[2].src="bban.jpg";
+
+  images[3] = new Image();
+  images[3].src="lego.jpg";
+
+  images[4] = new Image();
+  images[4].src="golf2.jpg";
+
+  images[5] = new Image();
+  images[5].src="et.jpg";
+
+  function SwapPic()
+  {
+  var imgnum = images.length-1;
+  do
+  {
+  var randnum = Math.random()
+  rand_img = Math.round((imgnum -1) *randnum) +1;
+  }
+  while (rand_img == useRand);
+  useRand = rand_img;
+  document.random_img.src = images[useRand].src;
+  }
+  </SCRIPT>
+  
 </head>
 
 <body>
   <!--<h1><a href="https://www.naver.com/" target="_blank" title="html5 speicification" style="color:#2874A6 ; ">라즈베리폴 Web 페이지</a></h1>-->
   
   <h1> 라즈베리폴 Web 페이지</h1>
-  <img src="golf2.jpg" style="width:100%; height:auto; max-height:600px;">
+  
+  <CENTER>
+   아래 이미지를 클릭하면 그림이 변경되어 나타납니다.
+   <HR size="5" color="green">
+   <A onClick="SwapPic();" ><IMG src="lego.jpg" name="random_img" style="width:100%; height:auto; max-height:600px;"></A>
+  </CENTER>
+     
+  <!--<img src="golf2.jpg" style="width:100%; height:auto; max-height:600px;">-->
   <input type="button" style="color:blue; font-size: 17px; background-color:coral;" value="mimi" onclick="
     nightDayHandler(this);
   ">
