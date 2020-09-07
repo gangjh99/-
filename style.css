@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 120px 1fr;
 }
-
 #grid #article {
   padding: 20px;
   background-color: #ECF6CE;
