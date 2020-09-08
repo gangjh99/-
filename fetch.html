@@ -7,16 +7,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="colors.js"></script>
   <script src="fetch.js"></script>
+  <script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
 
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <style media="screen">
+  div {
+    border: 1px solid gray;
+  }
+  h2{
+    text-align: center;
+  }
+  </style>
 </head>
-  
-  <li><a href="index.html" style="color: black">Home화면</a></li>
-<div>
-  <h2>    Ajax test 페이지 입니다</h2>
- </div>
-  <div><h2>== 각 button 을 클릭하면 하단의 내용이 바뀜. ==</h2></div>
+
   <body>
-    
+    <div class="container">
+      <div class="jumbotron">
+                  <h1 class="text-center" >Ajax test 페이지 입니다</h1>
+                  <!-- <p class="text-center">Ajax</p> -->
+                 <p class="text-center"> <a class="btn btn-primary btn-pull" href="https://gangjh99.github.io/web1/index.html" role="button" >Home 화면 click >> </a> </p>
+      </div>
+
+
+    <div><h2>== 아래 각 button 을 클릭하면 하단의 내용이 바뀝니다. ==</h2></div>
+
+  <div>
     <input type="button" style="background-color: #F7819F" value="golf"  onclick="
     fetch('golf').then(function(response){
       response.text().then(function(text){
@@ -39,5 +56,10 @@
     })
     ">
     <article></article>
-  </body>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+</body>
 </html>
