@@ -28,13 +28,13 @@ function nightDayHandler(self) {
   if (self.value === 'mimi') {
     Body.setBackgroundColor('black');
     Body.setColor('pink');
-    self.value = 'kiki';
+    self.value = 'day mode';
 
     Links.setColor('powderblue');
   } else {
     Body.setBackgroundColor('white');
     Body.setColor('black');
-    self.value = 'mimi';
+    self.value = 'night mode';
 
     Links.setColor('coral');
   }
