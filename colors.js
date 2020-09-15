@@ -25,7 +25,7 @@ var Body = {
 
 function nightDayHandler(self) {
   var target = document.querySelector('body');
-  if (self.value === 'mimi') {
+  if (self.value === 'night mode') {
     Body.setBackgroundColor('black');
     Body.setColor('pink');
     self.value = 'day mode';
@@ -39,3 +39,4 @@ function nightDayHandler(self) {
     Links.setColor('coral');
   }
 }
+
